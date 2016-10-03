@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+
+<GridPane
+	xmlns="http://javafx.com/javafx/8.0.40"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx.controller="songLib.view.SongLibController.java"
+	vgap="10" hgap="10">
+	
+	<ListView fx:id = "listView"
+		GridPane.columnIndex = "0" GridPane.rowIndex = "0" />	
+	<GridPane
+		xmlns="http://javafx.com/javafx/8.0.40"
+		xmlns:fx="http://javafx.com/fxml/1"
+		fx.controller="songLib.view.SongLibController.java"
+		vgap="10" hgap="10"
+		GridPane.columnIndex = "0" GridPane.rowIndex = "1" GridPane.valignment = "CENTER">
+		
+		<Button fx:id = "Add" text = "Add" GridPane.columnIndex = "0" GridPane.valignment = "CENTER"/>
+		<Button fx:id = "Edit" text = "Edit" GridPane.columnIndex = "1" GridPane.valignment = "CENTER"/>
+		<Button fx:id = "Delete" text = "Delete" GridPane.columnIndex = "2" GridPane.valignment = "CENTER"/>
+	</GridPane>
+	<Text fx:id = "details" text = "Filler" GridPane.columnIndex = "1" GridPane.rowIndex = "0" />
+	<GridPane
+		xmlns="http://javafx.com/javafx/8.0.40"
+		xmlns:fx="http://javafx.com/fxml/1"
+		fx.controller="songLib.view.SongLibController.java"
+		vgap="10" hgap="10"
+		GridPane.columnIndex = "1" GridPane.rowIndex = "1">
+		
+		<Text text = "Name" GridPane.columnIndex = "0" GridPane.rowIndex = "0" />
+		<Text text = "Artist" GridPane.columnIndex = "1" GridPane.rowIndex ="0" />
+		<Text text = "Album" GridPane.columnIndex = "2" GridPane.rowIndex = "0" />
+		<Text text = "Year" GridPane.columnIndex = "3" GridPane.rowIndex = "0" />
+		<Textfield fx:id = "name" GridPane.columnIndex = "0" GridPane.rowIndex = "1" />
+		<Textfield fx:id = "artist" GridPane.columnIndex = "1" GridPane.rowIndex = "1" />
+		<Textfield fx:id = "album" GridPane.columnIndex = "2" GridPane.rowIndex = "1" />
+		<Textfield fx:id = "year" GridPane.columnIndex = "3" GridPane.rowIndex = "1" /> 
+	</GridPane>
+</GridPane>
+
