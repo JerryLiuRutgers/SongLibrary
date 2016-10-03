@@ -2,13 +2,15 @@
 
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.text.*?>
 <?import javafx.geometry.*?>
 
 <GridPane
 	xmlns="http://javafx.com/javafx/8.0.40"
 	xmlns:fx="http://javafx.com/fxml/1"
-	fx.controller="songLib.view.SongLibController.java"
+	fx:controller="songLib.view.SongLibController"
 	vgap="10" hgap="10">
 	
 	<ListView fx:id = "listView"
@@ -16,7 +18,6 @@
 	<GridPane
 		xmlns="http://javafx.com/javafx/8.0.40"
 		xmlns:fx="http://javafx.com/fxml/1"
-		fx.controller="songLib.view.SongLibController.java"
 		vgap="10" hgap="10"
 		GridPane.columnIndex = "0" GridPane.rowIndex = "1" GridPane.valignment = "CENTER">
 		
@@ -28,7 +29,6 @@
 	<GridPane
 		xmlns="http://javafx.com/javafx/8.0.40"
 		xmlns:fx="http://javafx.com/fxml/1"
-		fx.controller="songLib.view.SongLibController.java"
 		vgap="10" hgap="10"
 		GridPane.columnIndex = "1" GridPane.rowIndex = "1">
 		
@@ -36,10 +36,10 @@
 		<Text text = "Artist" GridPane.columnIndex = "1" GridPane.rowIndex ="0" />
 		<Text text = "Album" GridPane.columnIndex = "2" GridPane.rowIndex = "0" />
 		<Text text = "Year" GridPane.columnIndex = "3" GridPane.rowIndex = "0" />
-		<Textfield fx:id = "name" GridPane.columnIndex = "0" GridPane.rowIndex = "1" />
-		<Textfield fx:id = "artist" GridPane.columnIndex = "1" GridPane.rowIndex = "1" />
-		<Textfield fx:id = "album" GridPane.columnIndex = "2" GridPane.rowIndex = "1" />
-		<Textfield fx:id = "year" GridPane.columnIndex = "3" GridPane.rowIndex = "1" /> 
+		<TextField fx:id = "name" GridPane.columnIndex = "0" GridPane.rowIndex = "1" />
+		<TextField fx:id = "artist" GridPane.columnIndex = "1" GridPane.rowIndex = "1" />
+		<TextField fx:id = "album" GridPane.columnIndex = "2" GridPane.rowIndex = "1" />
+		<TextField fx:id = "year" GridPane.columnIndex = "3" GridPane.rowIndex = "1" /> 
 	</GridPane>
 </GridPane>
 

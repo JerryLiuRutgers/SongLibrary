@@ -11,10 +11,11 @@ public class SongLib extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader();
-		loader.setLocation(getClass().getResource("/view/SongLibLayout.fxml"));
+		loader.setLocation(getClass().getResource("/songLib/view/SongLibLayout.fxml"));
 		
 		GridPane root = (GridPane)loader.load();
 		SongLibController listController = loader.getController();
+		listController.start(primaryStage);
 		Scene scene = new Scene(root);
 		primaryStage.setScene(scene);
 		primaryStage.setResizable(false);
