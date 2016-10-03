@@ -1,11 +1,21 @@
 package songLib.view;
 
-public class Song {
+public class Song implements Comparable<Song>{
 	
 	private String name;
 	private String artist;
 	private String album;
 	private String year;
+	
+	public int compareTo(Song other) {
+		int x = 0;
+		
+		int res = String.CASE_INSENSITIVE_ORDER.compare(this.name, other.name);
+        if (res == 0) {
+            res = this.name.compareTo(other.name);
+        }
+        return res;
+    }
 	
 	//Constructors
 	public Song(String name, String artist) {
@@ -70,6 +80,7 @@ public class Song {
 		this.year = year;
 	}
 	
+	//Displays just the song title in the listView
 	public String toString() {
 		return name;
 	}
