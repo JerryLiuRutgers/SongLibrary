@@ -69,4 +69,8 @@ public class Song {
 	public void setYear(String year) {
 		this.year = year;
 	}
+	
+	public String toString() {
+		return name;
+	}
 }

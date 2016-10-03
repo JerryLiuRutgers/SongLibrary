@@ -1,2 +1,0 @@
-testTitle1|testArtist1|testAlbum1|testYear1
-testTitle2|testArtist2||testYear2
