@@ -1,3 +1,6 @@
+//Jerry Liu - jl1421 - 138006256
+//Cynthia Liu - cl844 - 151001799
+
 package songLib.view;
 
 public class Song implements Comparable<Song>{
@@ -7,9 +10,7 @@ public class Song implements Comparable<Song>{
 	private String album;
 	private String year;
 	
-	public int compareTo(Song other) {
-		int x = 0;
-		
+	public int compareTo(Song other) {		
 		int res = String.CASE_INSENSITIVE_ORDER.compare(this.name, other.name);
         if (res == 0) {
             res = this.name.compareTo(other.name);

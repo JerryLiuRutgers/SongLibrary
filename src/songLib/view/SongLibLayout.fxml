@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!--
+Jerry Liu - jl1421 - 138006256
+Cynthia Liu - cl844 - 151001799
+-->
+
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.GridPane?>

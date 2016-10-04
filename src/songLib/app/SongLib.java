@@ -1,3 +1,6 @@
+//Jerry Liu - jl1421 - 138006256
+//Cynthia Liu - cl844 - 151001799
+
 package songLib.app;
 
 import javafx.application.Application;

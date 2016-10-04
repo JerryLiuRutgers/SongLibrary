@@ -1,14 +1,16 @@
+//Jerry Liu - jl1421 - 138006256
+//Cynthia Liu - cl844 - 151001799
+
 package songLib.view;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -38,6 +40,11 @@ public class SongLibController {
 	private ObservableList<Song> obsList;
 	
 	public void start(Stage mainStage) throws IOException {
+		//create save file
+		File f;
+		f = new File("songs.txt");
+		f.createNewFile();
+		
 		readList();
 		obsList = FXCollections.observableList(list);
 		listView.setItems(obsList);
@@ -117,6 +124,7 @@ public class SongLibController {
 	}
 	
 	public void edit (ActionEvent e) throws FileNotFoundException {
+		
 		if (!nameIn.getText().equals("") && !artistIn.getText().equals("")) {
 			Song toEdit = new Song(nameIn.getText(), artistIn.getText(),albumIn.getText(),yearIn.getText());
 			
