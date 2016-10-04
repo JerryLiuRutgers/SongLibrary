@@ -84,4 +84,12 @@ public class Song implements Comparable<Song>{
 	public String toString() {
 		return name;
 	}
+	
+	public boolean isEqual(Song other) {
+		if (this.name.equals(other.name) && this.artist.equals(other.artist)) {
+			return true;
+		}
+		
+		return false;
+	}
 }

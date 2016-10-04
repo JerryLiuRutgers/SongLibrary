@@ -21,9 +21,9 @@
 		vgap="10" hgap="10"
 		GridPane.columnIndex = "0" GridPane.rowIndex = "1" GridPane.valignment = "CENTER">
 		
-		<Button fx:id = "Add" text = "Add" GridPane.columnIndex = "0" GridPane.valignment = "CENTER"/>
-		<Button fx:id = "Edit" text = "Edit" GridPane.columnIndex = "1" GridPane.valignment = "CENTER"/>
-		<Button fx:id = "Delete" text = "Delete" GridPane.columnIndex = "2" GridPane.valignment = "CENTER"/>
+		<Button fx:id = "Add" text = "Add" GridPane.columnIndex = "0" GridPane.valignment = "CENTER" onAction = "#add"/>
+		<Button fx:id = "Edit" text = "Edit" GridPane.columnIndex = "1" GridPane.valignment = "CENTER" onAction = "#edit"/>
+		<Button fx:id = "Delete" text = "Delete" GridPane.columnIndex = "2" GridPane.valignment = "CENTER" onAction = "#delete"/>
 	</GridPane>
 	<Text fx:id = "details" text = "Filler" GridPane.columnIndex = "1" GridPane.rowIndex = "0" />
 	<GridPane
@@ -36,10 +36,10 @@
 		<Text text = "Artist" GridPane.columnIndex = "1" GridPane.rowIndex ="0" />
 		<Text text = "Album" GridPane.columnIndex = "2" GridPane.rowIndex = "0" />
 		<Text text = "Year" GridPane.columnIndex = "3" GridPane.rowIndex = "0" />
-		<TextField fx:id = "name" GridPane.columnIndex = "0" GridPane.rowIndex = "1" />
-		<TextField fx:id = "artist" GridPane.columnIndex = "1" GridPane.rowIndex = "1" />
-		<TextField fx:id = "album" GridPane.columnIndex = "2" GridPane.rowIndex = "1" />
-		<TextField fx:id = "year" GridPane.columnIndex = "3" GridPane.rowIndex = "1" /> 
+		<TextField fx:id = "nameIn" GridPane.columnIndex = "0" GridPane.rowIndex = "1" />
+		<TextField fx:id = "artistIn" GridPane.columnIndex = "1" GridPane.rowIndex = "1" />
+		<TextField fx:id = "albumIn" GridPane.columnIndex = "2" GridPane.rowIndex = "1" />
+		<TextField fx:id = "yearIn" GridPane.columnIndex = "3" GridPane.rowIndex = "1" /> 
 	</GridPane>
 </GridPane>
 

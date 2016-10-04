@@ -1,6 +1,0 @@
-testTitle1;testArtist1;testAlbum1;testYear1
-testTitle2;testArtist2;;testYear2
-aaaa;ggg;dddd;bb
-gg;eff;hhh;www
-zzz;gg;ww;i
-aaaa;f;g;e
