@@ -189,7 +189,7 @@ public class SongLibController {
 		
 		// Adds a new Song to the ArrayList for each line of songs.txt
 		while((line = bufferedReader.readLine()) != null) {	
-			list.add(new Song(line.split(";")[0], line.split(";")[1], line.split(";")[2], line.split(";")[3]));
+			list.add(new Song(line.split(";", -1)[0], line.split(";", -1)[1], line.split(";", -1)[2], line.split(";", -1)[3]));
 			Collections.sort(list);
 		}
 		
